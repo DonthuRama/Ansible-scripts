@@ -1,14 +1,13 @@
-- name: variables task level
+# TASK level variables
+- name: variables from PLAY level
   hosts: localhost
   vars:
-    course: Devops
-    stname: Ramakrishna
-    duration: 10hrs
+    Course: "DevOps"
+    Trainer: "Sivakumar"
+    Duration: "110HRS"
   tasks:
-  - name: check the variables override from task
-  vars:
-    course: Aws with Devops
-    stname: Donthuramakrishna
-    duration: 110hrs
-  ansible.builtin.debug:
-    msg: "Hi am learnig{{course}},my student name is {{stname}} ,my duration is {{duration}}"
+  - name: check variables
+    vars: #task level
+      Course: "DevOps with AWS"
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{Course}}, Trainer is {{Trainer}}, Duration is {{Duration}}"
