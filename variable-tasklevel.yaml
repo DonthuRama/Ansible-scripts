@@ -1,0 +1,14 @@
+- name: variables task level
+  hosts:localhost
+  vars:
+    course: Devops
+    stname: Ramakrishna
+    duration: 10hrs
+  tasks:
+  - name: check the variables override from task
+  vars:
+    course: Aws with Devops
+    stname: Donthuramakrishna
+    duration: 110hrs
+  ansible.builtin.debug:
+    msg: "Hi am learnig{{course}},my student name is {{stname}} ,my duration is {{duration}}"
