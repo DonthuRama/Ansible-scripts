@@ -1,0 +1,20 @@
+- name: ramakrishna
+  email: donthu1212@gmail.com
+  dob: 20-05-1988
+  Address :
+    Addressline1: kcg
+    Addressline2: hyd
+    pin: 507001
+  lastname: Donthu
+
+
+- name: rama
+  email: donthu1@gmail.com
+  dob: 20-05-1990
+  Address :
+  - Addressline1: kcg
+    Addressline2: hysec
+  - Addressline1: kcg
+    Addressline2: hysec
+    pin: 507002
+  lastname: Don
